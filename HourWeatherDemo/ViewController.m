@@ -13,6 +13,8 @@
 @property (nonatomic,strong) HFSlipView *slipLine;
 @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) NSArray *dataArray;
+@property (weak, nonatomic) IBOutlet UIView *dayWeatherView;
+
 @end
 
 @implementation ViewController
@@ -24,21 +26,23 @@
 
 - (void)draw24HourWeather {
     _scrollView = [[UIScrollView alloc] init];
-    [self.view addSubview:_scrollView];
-    [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(@(100));
-        make.left.right.mas_equalTo(0);
-        make.height.mas_equalTo(@(200));
-    }];
+    [self.dayWeatherView addSubview:_scrollView];
     _scrollView.showsHorizontalScrollIndicator = NO;
     self.view.backgroundColor = [UIColor grayColor];
+    [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.dayWeatherView);
+        make.top.equalTo(self.dayWeatherView);
+        make.height.equalTo(self.dayWeatherView);
+        
+    }];
     _scrollView.backgroundColor = [UIColor whiteColor];
     
     _slipLine = [[HFSlipView alloc] init];
     _slipLine.backgroundColor = [UIColor whiteColor];
     [_scrollView addSubview:_slipLine];
-    [_slipLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(0);
+    [_slipLine mas_makeConstraints:^(MASConstraintMaker *make){
+        make.height.equalTo(self.scrollView);
+        make.top.equalTo(self.scrollView);
     }];
     NSMutableArray *wetherArray = [NSMutableArray array];
     NSArray *wetherCode = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7"];
@@ -51,7 +55,7 @@
         if ([time isEqualToString:@"24:00"]) {
             time = @"0:00";
         }
-       
+        
         HFWeatherModel *model = [HFWeatherModel new];
         [wetherArray addObject:model];
         model.date = time;

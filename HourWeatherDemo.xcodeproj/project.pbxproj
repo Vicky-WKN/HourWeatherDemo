@@ -19,8 +19,8 @@
 		0404B2E621D3776E003BA646 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2E121D3776D003BA646 /* UIColor+HexString.m */; };
 		0404B2EC21D37A14003BA646 /* HFWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2E821D37A14003BA646 /* HFWeatherModel.m */; };
 		0404B2ED21D37A14003BA646 /* HFLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2E921D37A14003BA646 /* HFLineModel.m */; };
-		0404B2F321D37A3B003BA646 /* HFSlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2F121D37A3B003BA646 /* HFSlipView.m */; };
 		0404B2F421D37A3B003BA646 /* HFTempView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2F221D37A3B003BA646 /* HFTempView.m */; };
+		4301100A21D3E0DB00472AE5 /* HFSlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4301100921D3E0DB00472AE5 /* HFSlipView.m */; };
 		AA0E30F0A8DEC643AC5AE1F5 /* libPods-HourWeatherDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2076C158130960B0CA52B819 /* libPods-HourWeatherDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -48,11 +48,11 @@
 		0404B2EA21D37A14003BA646 /* HFWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFWeatherModel.h; sourceTree = "<group>"; };
 		0404B2EB21D37A14003BA646 /* HFLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLineModel.h; sourceTree = "<group>"; };
 		0404B2EF21D37A3B003BA646 /* HFTempView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTempView.h; sourceTree = "<group>"; };
-		0404B2F021D37A3B003BA646 /* HFSlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSlipView.h; sourceTree = "<group>"; };
-		0404B2F121D37A3B003BA646 /* HFSlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFSlipView.m; sourceTree = "<group>"; };
 		0404B2F221D37A3B003BA646 /* HFTempView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTempView.m; sourceTree = "<group>"; };
 		0404B2F521D37AC9003BA646 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2076C158130960B0CA52B819 /* libPods-HourWeatherDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HourWeatherDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4301100821D3E0DB00472AE5 /* HFSlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSlipView.h; sourceTree = "<group>"; };
+		4301100921D3E0DB00472AE5 /* HFSlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFSlipView.m; sourceTree = "<group>"; };
 		A6B733816058C21F3182DD94 /* Pods-HourWeatherDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HourWeatherDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HourWeatherDemo/Pods-HourWeatherDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E5FB841E8BFB5FFD70E0A22E /* Pods-HourWeatherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HourWeatherDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HourWeatherDemo/Pods-HourWeatherDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,8 +136,8 @@
 		0404B2EE21D37A3B003BA646 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0404B2F021D37A3B003BA646 /* HFSlipView.h */,
-				0404B2F121D37A3B003BA646 /* HFSlipView.m */,
+				4301100821D3E0DB00472AE5 /* HFSlipView.h */,
+				4301100921D3E0DB00472AE5 /* HFSlipView.m */,
 				0404B2EF21D37A3B003BA646 /* HFTempView.h */,
 				0404B2F221D37A3B003BA646 /* HFTempView.m */,
 			);
@@ -257,13 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4301100A21D3E0DB00472AE5 /* HFSlipView.m in Sources */,
 				0404B2E421D3776E003BA646 /* UIBezierPath+Draw.m in Sources */,
 				0404B2C921D3774F003BA646 /* ViewController.m in Sources */,
 				0404B2EC21D37A14003BA646 /* HFWeatherModel.m in Sources */,
 				0404B2E321D3776E003BA646 /* UIView+Position.m in Sources */,
 				0404B2E521D3776E003BA646 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
 				0404B2ED21D37A14003BA646 /* HFLineModel.m in Sources */,
-				0404B2F321D37A3B003BA646 /* HFSlipView.m in Sources */,
 				0404B2E621D3776E003BA646 /* UIColor+HexString.m in Sources */,
 				0404B2D421D37751003BA646 /* main.m in Sources */,
 				0404B2F421D37A3B003BA646 /* HFTempView.m in Sources */,

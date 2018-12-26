@@ -50,7 +50,6 @@
 @end
 
 @implementation HFSlipView
-
 #pragma mark setter
 
 - (NSMutableArray*)modelPostionArray
@@ -85,7 +84,6 @@
         
         [self drawAirTemperatureFillLayer];
         [self drawAirTemperatureLineLayer];
-        
         
     }
     UIColor *color = [UIColor redColor];
@@ -136,6 +134,19 @@
             layer.fillColor = [[UIColor colorFromHexString:@"#66C5D6"] CGColor];
         } else {
             layer.fillColor = [[UIColor colorFromHexString:@"#B2E2E9"] CGColor];
+        }
+        
+        HFLineModel *postionModel = self.modelPostionArray[idx];
+        if (model.isDrawImage)
+        {
+            static NSInteger index = 0;
+            UIImageView *imageView = [UIImageView new];
+            [self.layer insertSublayer:imageView.layer above:layer];
+            imageView.center = imageView.center = CGPointMake(postionModel.xPosition+10, 100-20);
+            imageView.bounds = CGRectMake(0, 0, 20, 20);
+            imageView.tag = idx;
+            imageView.image = [UIImage imageNamed:model.imageCode];
+            index++;
         }
         
     }];
@@ -326,8 +337,8 @@
                 static NSInteger index = 0;
                 UIImageView *imageView = [UIImageView new];
                 [self addSubview:imageView];
-                imageView.center = CGPointMake(postionModel.xPosition, postionModel.yPosition - 15);
-                imageView.bounds = CGRectMake(0, 0, 30, 30);
+                imageView.center = CGPointMake(postionModel.xPosition+10, 100-20);
+                imageView.bounds = CGRectMake(0, 0, 20, 20);
                 imageView.tag = i;
                 imageView.image = [UIImage imageNamed:model.imageCode];
                 ++ index;
@@ -469,7 +480,6 @@
     [self calcuteModelPostion];
     [self addTempView];
     [self addWetherImages];
-    [self drawRect:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 200)];
 }
 
 - (void)didMoveToSuperview
