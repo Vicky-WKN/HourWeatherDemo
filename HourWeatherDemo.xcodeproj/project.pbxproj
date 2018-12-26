@@ -13,6 +13,15 @@
 		0404B2CE21D37751003BA646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0404B2CD21D37751003BA646 /* Assets.xcassets */; };
 		0404B2D121D37751003BA646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404B2CF21D37751003BA646 /* LaunchScreen.storyboard */; };
 		0404B2D421D37751003BA646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2D321D37751003BA646 /* main.m */; };
+		0404B2E321D3776E003BA646 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2DB21D3776D003BA646 /* UIView+Position.m */; };
+		0404B2E421D3776E003BA646 /* UIBezierPath+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2DD21D3776D003BA646 /* UIBezierPath+Draw.m */; };
+		0404B2E521D3776E003BA646 /* UIBezierPath+LxThroughPointsBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2E021D3776D003BA646 /* UIBezierPath+LxThroughPointsBezier.m */; };
+		0404B2E621D3776E003BA646 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2E121D3776D003BA646 /* UIColor+HexString.m */; };
+		0404B2EC21D37A14003BA646 /* HFWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2E821D37A14003BA646 /* HFWeatherModel.m */; };
+		0404B2ED21D37A14003BA646 /* HFLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2E921D37A14003BA646 /* HFLineModel.m */; };
+		0404B2F321D37A3B003BA646 /* HFSlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2F121D37A3B003BA646 /* HFSlipView.m */; };
+		0404B2F421D37A3B003BA646 /* HFTempView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404B2F221D37A3B003BA646 /* HFTempView.m */; };
+		AA0E30F0A8DEC643AC5AE1F5 /* libPods-HourWeatherDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2076C158130960B0CA52B819 /* libPods-HourWeatherDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,26 @@
 		0404B2D021D37751003BA646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0404B2D221D37751003BA646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0404B2D321D37751003BA646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0404B2DB21D3776D003BA646 /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
+		0404B2DC21D3776D003BA646 /* UIBezierPath+LxThroughPointsBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+LxThroughPointsBezier.h"; sourceTree = "<group>"; };
+		0404B2DD21D3776D003BA646 /* UIBezierPath+Draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Draw.m"; sourceTree = "<group>"; };
+		0404B2DE21D3776D003BA646 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		0404B2DF21D3776D003BA646 /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
+		0404B2E021D3776D003BA646 /* UIBezierPath+LxThroughPointsBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+LxThroughPointsBezier.m"; sourceTree = "<group>"; };
+		0404B2E121D3776D003BA646 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		0404B2E221D3776D003BA646 /* UIBezierPath+Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Draw.h"; sourceTree = "<group>"; };
+		0404B2E821D37A14003BA646 /* HFWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFWeatherModel.m; sourceTree = "<group>"; };
+		0404B2E921D37A14003BA646 /* HFLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFLineModel.m; sourceTree = "<group>"; };
+		0404B2EA21D37A14003BA646 /* HFWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFWeatherModel.h; sourceTree = "<group>"; };
+		0404B2EB21D37A14003BA646 /* HFLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLineModel.h; sourceTree = "<group>"; };
+		0404B2EF21D37A3B003BA646 /* HFTempView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTempView.h; sourceTree = "<group>"; };
+		0404B2F021D37A3B003BA646 /* HFSlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSlipView.h; sourceTree = "<group>"; };
+		0404B2F121D37A3B003BA646 /* HFSlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFSlipView.m; sourceTree = "<group>"; };
+		0404B2F221D37A3B003BA646 /* HFTempView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTempView.m; sourceTree = "<group>"; };
+		0404B2F521D37AC9003BA646 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2076C158130960B0CA52B819 /* libPods-HourWeatherDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HourWeatherDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B733816058C21F3182DD94 /* Pods-HourWeatherDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HourWeatherDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HourWeatherDemo/Pods-HourWeatherDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E5FB841E8BFB5FFD70E0A22E /* Pods-HourWeatherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HourWeatherDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HourWeatherDemo/Pods-HourWeatherDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0E30F0A8DEC643AC5AE1F5 /* libPods-HourWeatherDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +74,8 @@
 			children = (
 				0404B2C321D3774F003BA646 /* HourWeatherDemo */,
 				0404B2C221D3774F003BA646 /* Products */,
+				5F5C7BC3417CC46D4C992B68 /* Pods */,
+				7DFC8975DF87BB12F0F3BDD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +90,9 @@
 		0404B2C321D3774F003BA646 /* HourWeatherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0404B2E721D37A14003BA646 /* Model */,
+				0404B2DA21D3776D003BA646 /* Category */,
+				0404B2EE21D37A3B003BA646 /* View */,
 				0404B2C421D3774F003BA646 /* AppDelegate.h */,
 				0404B2C521D3774F003BA646 /* AppDelegate.m */,
 				0404B2C721D3774F003BA646 /* ViewController.h */,
@@ -67,8 +102,63 @@
 				0404B2CF21D37751003BA646 /* LaunchScreen.storyboard */,
 				0404B2D221D37751003BA646 /* Info.plist */,
 				0404B2D321D37751003BA646 /* main.m */,
+				0404B2F521D37AC9003BA646 /* PrefixHeader.pch */,
 			);
 			path = HourWeatherDemo;
+			sourceTree = "<group>";
+		};
+		0404B2DA21D3776D003BA646 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0404B2DF21D3776D003BA646 /* UIView+Position.h */,
+				0404B2DB21D3776D003BA646 /* UIView+Position.m */,
+				0404B2DC21D3776D003BA646 /* UIBezierPath+LxThroughPointsBezier.h */,
+				0404B2E021D3776D003BA646 /* UIBezierPath+LxThroughPointsBezier.m */,
+				0404B2DE21D3776D003BA646 /* UIColor+HexString.h */,
+				0404B2E121D3776D003BA646 /* UIColor+HexString.m */,
+				0404B2E221D3776D003BA646 /* UIBezierPath+Draw.h */,
+				0404B2DD21D3776D003BA646 /* UIBezierPath+Draw.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0404B2E721D37A14003BA646 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0404B2EA21D37A14003BA646 /* HFWeatherModel.h */,
+				0404B2E821D37A14003BA646 /* HFWeatherModel.m */,
+				0404B2EB21D37A14003BA646 /* HFLineModel.h */,
+				0404B2E921D37A14003BA646 /* HFLineModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0404B2EE21D37A3B003BA646 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0404B2F021D37A3B003BA646 /* HFSlipView.h */,
+				0404B2F121D37A3B003BA646 /* HFSlipView.m */,
+				0404B2EF21D37A3B003BA646 /* HFTempView.h */,
+				0404B2F221D37A3B003BA646 /* HFTempView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F5C7BC3417CC46D4C992B68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB841E8BFB5FFD70E0A22E /* Pods-HourWeatherDemo.debug.xcconfig */,
+				A6B733816058C21F3182DD94 /* Pods-HourWeatherDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DFC8975DF87BB12F0F3BDD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2076C158130960B0CA52B819 /* libPods-HourWeatherDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0404B2D721D37751003BA646 /* Build configuration list for PBXNativeTarget "HourWeatherDemo" */;
 			buildPhases = (
+				6B35A87547573B01B53C7639 /* [CP] Check Pods Manifest.lock */,
 				0404B2BD21D3774F003BA646 /* Sources */,
 				0404B2BE21D3774F003BA646 /* Frameworks */,
 				0404B2BF21D3774F003BA646 /* Resources */,
@@ -136,13 +227,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6B35A87547573B01B53C7639 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HourWeatherDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0404B2BD21D3774F003BA646 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0404B2E421D3776E003BA646 /* UIBezierPath+Draw.m in Sources */,
 				0404B2C921D3774F003BA646 /* ViewController.m in Sources */,
+				0404B2EC21D37A14003BA646 /* HFWeatherModel.m in Sources */,
+				0404B2E321D3776E003BA646 /* UIView+Position.m in Sources */,
+				0404B2E521D3776E003BA646 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
+				0404B2ED21D37A14003BA646 /* HFLineModel.m in Sources */,
+				0404B2F321D37A3B003BA646 /* HFSlipView.m in Sources */,
+				0404B2E621D3776E003BA646 /* UIColor+HexString.m in Sources */,
 				0404B2D421D37751003BA646 /* main.m in Sources */,
+				0404B2F421D37A3B003BA646 /* HFTempView.m in Sources */,
 				0404B2C621D3774F003BA646 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,10 +407,15 @@
 		};
 		0404B2D821D37751003BA646 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5FB841E8BFB5FFD70E0A22E /* Pods-HourWeatherDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96ZSRJUL7X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HourWeatherDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = HourWeatherDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +428,15 @@
 		};
 		0404B2D921D37751003BA646 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6B733816058C21F3182DD94 /* Pods-HourWeatherDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96ZSRJUL7X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HourWeatherDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = HourWeatherDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
